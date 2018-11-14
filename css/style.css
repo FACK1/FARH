@@ -8,7 +8,7 @@ body {
   color: #333;
   line-height: normal;
   text-align: justify;
-  width: 500px;
+  /* width: 500px; */
 
 
 }
@@ -125,6 +125,51 @@ input[submit] {
 input:hover{
     background-color: #bbb;
 }
+
+
+  .button:hover {
+  background-color: #bbb;
+  }
+  .deleteButton{
+
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    /* background: #d9d9d9; */
+    /* color: #555; */
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    background: url(../images/delete.png);
+    background-color: #D1BB7D;
+  }
+  .markButton{
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    /* background: #d9d9d9; */
+    /* color: #555; */
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    background: url(../images/mark.png);
+    background-color: #D1BB7D;
+    
+  }
+
+/* .deleteButton{
+    background: url(../images/delete.png);
+}
+.markButton{
+  background: url(../images/mark.png);
+} */
+
 /* Style the "Add" button */
 /* .addBtn {
     padding: 10px;
