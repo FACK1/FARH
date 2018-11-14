@@ -33,5 +33,5 @@ In Our App You can :
  # Team_Member:
 - Hadeel Salamin
 - Fidaa Al-Hersh
-- (Amin Talahmeh)[https://github.com/ameentalahmeh]
+- !(Amin Talahmeh)[https://github.com/ameentalahmeh]
 - Razan Tayyem
