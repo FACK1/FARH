@@ -12,20 +12,23 @@
   ]; // this is our initial todoList
   // This function takes a todo, it returns the DOM node representing that todo
   var createTodoNode = function(todo) {
+
     var todoNode = document.createElement('li');
+    if(todo.done===true){
+      todoNode.classList.add("mark")
+    }
+
     // you will need to use addEventListener //our edit
         // add span holding description
 
-        var des=document.createElement('SPAN');
-        des.innerText=todo.description;
-        todoNode.appendChild(des);
+    var des=document.createElement('SPAN');
+    des.innerText=todo.description;
+    todoNode.appendChild(des);
        //end
     // this adds the delete button
     var deleteButtonNode = document.createElement('button');
     deleteButtonNode.addEventListener('click', function(event) {
-      console.log(todo.id)
       var newState = todoFunctions.deleteTodo(state, todo.id);
-      console.log(newState);
       update(newState);
     });
     todoNode.appendChild(deleteButtonNode);
@@ -48,12 +51,8 @@
   if (addTodoForm) {
    addTodoForm.addEventListener('submit', function(event) {
       event.preventDefault();
-
-
-
-
     var description = event.target.description.value; // event.target ....
-   console.log(description)
+  // console.log(description)
   //our edit
   // end
     // hint: todoFunctions.addTodo

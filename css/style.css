@@ -66,7 +66,7 @@ ul li:hover {
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+.mark {
     background: #888;
     color: #fff;
     text-decoration: line-through;
