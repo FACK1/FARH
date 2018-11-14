@@ -15,20 +15,17 @@
     var todoNode = document.createElement('li');
     // you will need to use addEventListener //our edit
         // add span holding description
-        for(var i = 0; i < todoNode.length; i++)
-      {
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        todoNode[i].appendChild(span)
-      }
-    })
-//end
+
+        var des=document.createElement('SPAN');
+        des.innerText=todo.description;
+        todoNode.appendChild(des);
+       //end
     // this adds the delete button
     var deleteButtonNode = document.createElement('button');
     deleteButtonNode.addEventListener('click', function(event) {
+      console.log(todo.id)
       var newState = todoFunctions.deleteTodo(state, todo.id);
+      console.log(newState);
       update(newState);
     });
     todoNode.appendChild(deleteButtonNode);
@@ -49,19 +46,26 @@
 
   // bind create todo form
   if (addTodoForm) {
-    addTodoForm.addEventListener('submit', function(event) {
+   addTodoForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+
+
+
+    var description = event.target.description.value; // event.target ....
+   console.log(description)
+  //our edit
+  // end
+    // hint: todoFunctions.addTodo
+    var newState=todoFunctions.addTodo(state, description); // ?? change this!
+    update(newState);
+
+  })
       // https://developer.mozilla.org/en-US/docs/Web/Events/submit
       // what does event.preventDefault do?
      //our edit
-      event.preventDefault();
       // what is inside event.target?
-      var description = event.target().description.value; // event.target ....
-    //our edit
-    // end
-      // hint: todoFunctions.addTodo
-      var newState.push(todoFunctions.addTodo(todoNode, description)); // ?? change this!
-      update(newState);
-    });
+
   }
 
   // you should not need to change this function
