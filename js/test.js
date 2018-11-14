@@ -24,5 +24,7 @@ test('test for marking a todo', function(t) {
   [{id: 0, description: 'first todo', done: true}],"a todo has been marked!");
   t.deepEqual(logic.markTodo([{id: 1, description: 'first todo', done: true}], 1),
   [{id: 1, description: 'first todo', done: false}],"a todo has been unmarked!");
+  t.deepEqual(logic.markTodo([{id: 1, description: 'first todo'}], 1),
+  [{id: 1, description: 'first todo', done: true}],"a todo without a done property has been marked!");
   t.end();
 });
