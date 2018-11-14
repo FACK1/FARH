@@ -53,6 +53,24 @@ var todoFunctions = {
     // should leave the input arguement todos unchanged (you can use cloneArrayOfObjects)
     // sortFunction will have same signature as the sort function in array.sort
     // hint: array.slice, array.sort
+    var updatedArray = todoFunctions.cloneArrayOfObjects(todos);
+    var undone = [];
+    var done = [];
+    updatedArray.map(function(todo){
+   if(todo.done === true)
+    done.push(todo);
+    else{
+    undone.push(todo);
+    }
+   })
+
+if(sortFunction === 1){
+ return [...done, ...undone];
+}
+else{
+ return [...undone, ...done]
+}
+
   },
 };
 

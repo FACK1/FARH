@@ -16,6 +16,8 @@
     var todoNode = document.createElement('li');
     if(todo.done===true){
       todoNode.classList.add("mark")
+    }else {
+      todoNode.classList.add("unmark");
     }
 
     // you will need to use addEventListener //our edit
@@ -46,28 +48,30 @@
      //end
     // add classes for css
 
+    document.getElementById('sort1').addEventListener('click',function(event) {
+      var newState = todoFunctions.sortTodos(state, 1);
+      update(newState);
+    });
+
+    document.getElementById('sort2').addEventListener('click',function(event) {
+      var newState = todoFunctions.sortTodos(state, 2);
+      update(newState);
+    });
+
     return todoNode;
   };
 
   // bind create todo form
+  //step 1: get the text input from the text field if the button has been clicked
   if (addTodoForm) {
    addTodoForm.addEventListener('submit', function(event) {
       event.preventDefault();
-    var description = event.target.description.value; // event.target ....
-  // console.log(description)
-  //our edit
-  // end
-    // hint: todoFunctions.addTodo
-    var newState=todoFunctions.addTodo(state, description); // ?? change this!
+    var description = event.target.description.value; //assign the text input to a variable
+   // add new todo to a new array
+    var newState=todoFunctions.addTodo(state, description);
     update(newState);
-
-  })
-      // https://developer.mozilla.org/en-US/docs/Web/Events/submit
-      // what does event.preventDefault do?
-     //our edit
-      // what is inside event.target?
-
-  }
+})
+      }
 
   // you should not need to change this function
   var update = function(newState) {
@@ -88,4 +92,5 @@
   };
 
   if (container) renderState(state);
+
 })();

@@ -4,7 +4,8 @@
   "description": "To do list app",
   "main": "index.js",
   "scripts": {
-    "test": "tape ./js/test.js | tap-spec"
+    "test": "tape ./js/test.js | tap-spec",
+    "istanbul": "istanbul cover tape ./js/test.js"
   },
   "repository": {
     "type": "git",
