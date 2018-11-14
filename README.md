@@ -29,7 +29,7 @@ In Our App You can :
 - To do list for Wednesday:
   - Create a design & divide tasks 
   - write & do testing for the code
-  -
+  
  # Team_Member:
 - Hadeel Salamin
 - Fidaa Al-Hersh
