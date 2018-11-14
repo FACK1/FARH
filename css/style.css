@@ -50,6 +50,7 @@ ul li {
     background: white;
     font-size: 18px;
     transition: 0.2s;
+    border-color: #94C329;
 
 
 
@@ -71,6 +72,9 @@ ul li:hover {
     color: #fff;
     text-decoration: line-through;
 }
+.unmark{
+  text-decoration: none;
+}
 
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
@@ -86,18 +90,6 @@ ul li.checked::before {
     width: 7px;
 }
 
-/* Style the close button */
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-    background-color: #f44336;
-    color: white;
-}
 
 
 /* Style the input */
@@ -135,8 +127,6 @@ input:hover{
     padding: 10px;
     width: 35px;
     height: 35px;
-    /* background: #d9d9d9; */
-    /* color: #555; */
     float: right;
     text-align: center;
     font-size: 16px;
@@ -150,8 +140,6 @@ input:hover{
     padding: 10px;
     width: 35px;
     height: 35px;
-    /* background: #d9d9d9; */
-    /* color: #555; */
     float: right;
     text-align: center;
     font-size: 16px;
@@ -160,30 +148,18 @@ input:hover{
     border-radius: 0;
     background: url(../images/mark.png);
     background-color: #D1BB7D;
-    
+
   }
 
-/* .deleteButton{
-    background: url(../images/delete.png);
-}
-.markButton{
-  background: url(../images/mark.png);
-} */
-
-/* Style the "Add" button */
-/* .addBtn {
+  #sort{
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-}
+  }
 
-.addBtn:hover {
-    background-color: #bbb;
-} */
+  #sort1, #sort2{
+    background-color: #D1BB7D;
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+  }
