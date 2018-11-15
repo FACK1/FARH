@@ -1,11 +1,9 @@
 body {
   background: rgb(231, 236, 237);
-
   font-family: 'Helvetica', Arial, sans-serif;
   color: #333;
   line-height: normal;
   text-align: justify;
-  /* width: 500px; */
 }
 
 #add-todo{
@@ -17,10 +15,7 @@ cursor: default;
 background-repeat: no-repeat;
 background-position: center;
  display: block;
-
-
- box-shadow: inset 0 0 100px #8CC152;
-
+ box-shadow: inset 0 0 30px #8CC152;
  font-size: 150%;
  color: #8CC152;
  font-weight: bold;
@@ -65,10 +60,8 @@ ul li:hover {
 
 /* When clicked on, add a background color and strike out text */
 .mark {
-    background: #888;
-    color: #fff;
     text-decoration: line-through;
-}
+  }
 .unmark{
   text-decoration: none;
 }
