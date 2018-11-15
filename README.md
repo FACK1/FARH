@@ -1,6 +1,8 @@
 # FARH
 To do list app
 
+## FARH URL : https://fack1.github.io/FARH/html/index.html
+
 # User journey :
 In Our App You can :
   - Orgnise your day.
@@ -8,8 +10,6 @@ In Our App You can :
   - Show all your coming tasks.
   - Shows you your achievements
   
-  
-# Site design : 
 
 # Architecture : 
 - File structure

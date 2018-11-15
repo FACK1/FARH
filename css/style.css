@@ -121,7 +121,7 @@ input:hover{
   }
   .deleteButton{
 
-    padding: 10px;
+
     width: 35px;
     height: 35px;
     float: right;
@@ -129,12 +129,12 @@ input:hover{
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
+    border-radius: 1em;
     background: url(../images/delete.png);
     background-color: #D1BB7D;
   }
   .markButton{
-    padding: 10px;
+
     width: 35px;
     height: 35px;
     float: right;
@@ -142,7 +142,7 @@ input:hover{
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
+    border-radius: 8em;
     background: url(../images/mark.png);
     background-color: #D1BB7D;
 
