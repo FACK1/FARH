@@ -1,6 +1,13 @@
 
 
-
+.h1{
+ margin: auto;
+ text-align: center;
+ padding-top: 48px;
+ font-size: 25pt;
+ color: #9a314d;
+ font-family: 'Open Sans', sans-serif;
+}
 body {
   background: rgb(231, 236, 237);
 
@@ -9,7 +16,6 @@ body {
   line-height: normal;
   text-align: justify;
   /* width: 500px; */
-
 
 }
 
