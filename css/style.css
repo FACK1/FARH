@@ -44,9 +44,6 @@ ul li {
     font-size: 18px;
     transition: 0.2s;
     border-color: #94C329;
-
-
-
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
@@ -92,7 +89,6 @@ ul li.checked::before {
     height: 30px;
     padding: 10px;
     font-size: 16px;
-
 }
 
 #add {
@@ -103,23 +99,20 @@ ul li.checked::before {
    width: 50px;
    height: 50px;
    padding: 10px;
-
    font-size: 16px;
    font-weight: bold;
    background-color: #D1BB7D;
-
 }
 input:hover{
     background-color: #bbb;
 }
-
 
   .button:hover {
   background-color: #bbb;
   }
   .deleteButton{
 
-    padding: 10px;
+
     width: 35px;
     height: 35px;
     float: right;
@@ -127,12 +120,12 @@ input:hover{
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
+    border-radius: 1em;
     background: url(../images/delete.png);
     background-color: #D1BB7D;
   }
   .markButton{
-    padding: 10px;
+
     width: 35px;
     height: 35px;
     float: right;
@@ -140,7 +133,7 @@ input:hover{
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
+    border-radius: 8em;
     background: url(../images/mark.png);
     background-color: #D1BB7D;
   }
