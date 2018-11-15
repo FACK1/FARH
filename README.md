@@ -10,8 +10,6 @@ In Our App You can :
   - Show all your coming tasks.
   - Shows you your achievements
   
-  
-# Site design : 
 
 # Architecture : 
 - File structure
