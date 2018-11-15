@@ -42,10 +42,9 @@
     var description = event.target.description.value;
     var newState=todoFunctions.addTodo(state, description);
     update(newState);
-
   })
   }
-
+  
   var update = function(newState) {
     state = newState;
     renderState(state);

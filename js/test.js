@@ -34,16 +34,13 @@ test('test for marking a todo', function(t) {
 });
 
 test('test for sorting todos', function(t) {
-
 var a = [
  {id: 0, description: 'first todo', done: false},
  {id: 1, description: 'second todo', done: true},
  {id: 2, description: 'third todo', done: false}
 ];
-
 var actual1 = logic.sortTodos(a, 1);
 var actual2 = logic.sortTodos(a, 2);
-
 var expected1 = [
  {id: 1, description: 'second todo', done: true},
  {id: 0, description: 'first todo', done: false},
