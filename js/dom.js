@@ -70,6 +70,7 @@
    // add new todo to a new array
     var newState=todoFunctions.addTodo(state, description);
     update(newState);
+    document.getElementsByName("description")[0].value = '';
 })
       }
 
